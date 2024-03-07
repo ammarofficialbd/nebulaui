@@ -1,0 +1,17 @@
+
+  @keyframes borderRadiusAnimation {
+    0% {
+      border-radius: 5px;
+    }
+    50% {
+      border-radius: 20px;
+    }
+    100% {
+      border-radius: 5px;
+    }
+  }
+  
+  /* Apply the animation to the hover state of the button */
+  .hover\:animate-border-radius:hover {
+    animation: borderRadiusAnimation 1s infinite;
+  }
