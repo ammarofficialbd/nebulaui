@@ -10,10 +10,10 @@ function Button() {
   return (
     <>
 
-    <p className=''> Button </p>
+    <p className='text-lg'> Button </p>
     <AllButton  label='Buttons'/>
     <GhostButton label={'Button'}/>
-    <div>
+    <div className='text-lg'>
      sm to 2xl Buttons </div>
     <AllButton size={'sm'} label='Buttons'/> 
     <AllButton size={'md'} label='Buttons'/> 
@@ -22,7 +22,7 @@ function Button() {
     <AllButton size={'2xl'} label='Buttons'/>
    <br/>
    <br/>
-   <p> Ghost Button  7 layers</p>
+   <p className='text-lg'> Ghost Button  7 layers</p>
    <GhostButton2 label={'Button'} type={'primary'}/>
    <GhostButton2 label={'Button'} type={'accent'}/>
    <GhostButton2 label={'Button'} type={'success'}/>
@@ -33,7 +33,7 @@ function Button() {
    <GhostButton2 label={'Button'} />
    <br/>
    <br/>
-   <p> GHOST BUTTON WITH BORDER</p>
+   <p className='text-lg'>  GHOST BUTTON WITH BORDER</p>
    <GhostButton3 label={'Button'} type={'primary'}/>
    <GhostButton3 label={'Button'} type={'accent'}/>
    <GhostButton3 label={'Button'} type={'success'}/>
@@ -45,7 +45,7 @@ function Button() {
    
    <br/>
    <br/>
-   <p> State BUTTON WITH BORDER</p>
+   <p className='text-lg'> STATE BUTTON WITH FILL COLOR</p>
    <StateButton label={'Button'} type={'primary'}/>
    <StateButton label={'Button'} type={'accent'}/>
    <StateButton label={'Button'} type={'success'}/>

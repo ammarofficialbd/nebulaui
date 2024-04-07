@@ -1,6 +1,6 @@
 import React from 'react';
-
-const StateButton = ({ type, label }) => {
+import './btn.css'
+const StateButton = ({ type, label,handleCook, item}) => {
 
   const getColorClasses = () => {
     switch (type) {
@@ -19,7 +19,7 @@ const StateButton = ({ type, label }) => {
     case 'error':
         return { background: 'bg-red-500 hover:bg-red-700', text: 'text-white' };
       default:
-        return { background: 'bg-gray-200 hover:bg-gray-400', text: 'text-black' };
+        return { background: 'bg-amber-200 hover:bg-gray-400', text: 'text-black' };
     }
   };
 
@@ -27,7 +27,7 @@ const StateButton = ({ type, label }) => {
 
   return (
     <button
-      className={`py-[.7rem] px-4 rounded ${background} ${text} font-semibold transition duration-300 ease-in-out hover:bg-opacity-80`}
+      className={`py-6 px-4 rounded ${background} ${text} font-semibold btn`} onClick={()=>handleCook(item)}
     >
       {label}
     </button>
